@@ -12,7 +12,7 @@ Industries that could benefit most include **finance** (portfolio optimization),
 
 ## Part 2: Task 1 – Edge AI Prototype
 
-![accuracy metrics](accuracy-metrics.png)*
+![accuracy metrics](accuracy-metrics.png)
 
 ### How Edge AI Benefits Real-Time Applications
 - **Low Latency:** Processes data instantly on the device without waiting for cloud responses.  
@@ -21,3 +21,35 @@ Industries that could benefit most include **finance** (portfolio optimization),
 - **Reduced Bandwidth:** No need for continuous cloud communication.  
 - **Energy Efficiency:** Lightweight models like TensorFlow Lite use less power, ideal for embedded systems.  
 - **Real-Time Decision-Making:** Enables immediate responses in applications like smart cameras, autonomous vehicles, and IoT sensors.
+  
+
+# Task 2: AI-Driven IoT Concept – Smart Agriculture System
+
+## Required Sensors
+- **Soil Moisture Sensor** – Measures soil water level.  
+- **Temperature Sensor (DHT11/DHT22)** – Monitors air temperature.  
+- **Humidity Sensor** – Tracks air moisture levels.  
+- **Light Sensor (LDR)** – Detects sunlight intensity.  
+- **pH Sensor** – Checks soil acidity/alkalinity.  
+
+## Proposed AI Model
+- **Model Type:** Linear Regression or a small Neural Network  
+- **Input Features:** Soil moisture, temperature, humidity, light, and pH values  
+- **Output:** Predicted crop yield (in kg/hectare or yield percentage)  
+- **Purpose:** Help farmers optimize irrigation and fertilizer usage for better productivity.
+  
+## Data Flow Diagram
+[IoT Sensors]
+(Soil, Temp, Humidity, Light, pH)
+            ▼
+[Microcontroller / Edge Device]
+(e.g., Raspberry Pi or ESP32)
+            ▼
+[Data Preprocessing]
+(Filtering, Normalization)
+│          ▼
+[AI Model]
+(Predict Crop Yield)
+│         ▼
+[Dashboard / Cloud Display]
+
